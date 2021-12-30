@@ -47,9 +47,11 @@ body{
     transition: background 500ms;
 }
 
-#nb1 .navbar-nav{
+/* #nb1 .navbar-nav{
     margin-left: 40rem;
-}
+} */
+
+/*gaurang's nav*******************************
 
 /*nav ul li a{
     height: 100%;
@@ -129,7 +131,7 @@ nav ul li a:hover,nav ul li a:active{
     margin-top : -3vw;
 }
 .vision{
-    position: relative;
+    position: absolute;
     margin : 0 10vw;
     margin-top: 80vh; 
     text-align: justify;
