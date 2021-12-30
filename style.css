@@ -8,7 +8,7 @@ html, body{
 body{
     
     font-size: 15px;
-    background: grey;
+    background: white;
     /* line-height: 1.64;
     margin: 0;
     overflow-x: hidden; */
@@ -40,7 +40,7 @@ body{
 }
 
 #nb1 .nav-link:hover{
-    color: #8b2323;
+    color: #FFFF33;
 }
 .navbar.scrolled {
     background: #04269E;
@@ -65,6 +65,8 @@ nav ul li a:hover,nav ul li a:active{
     background-color: #1897cf;
 }  */
 
+
+
 .home{
     position: relative; 
 } 
@@ -79,20 +81,20 @@ nav ul li a:hover,nav ul li a:active{
     position: absolute;
     width : 50vw;
     left : 50%;
-    top : 20%;
+    top : 15vh;
 }
 
    
 .wave1 > img{
    width : 170vw;
-   transform: rotate(10deg);
-   margin-top: -30vw;
+   transform: rotate(20deg);
+   margin-top: -60vw;
    margin-left: -10vw;
 }
 
 .wave2 > img{
-    width : 150vw;
-    transform: rotate(10deg);
+    width : 200vw;
+    transform: rotate(5deg);
     margin-top: -20vw;
     margin-left: -10vw;
 }
@@ -100,8 +102,17 @@ nav ul li a:hover,nav ul li a:active{
 .wave3 > img{
     width : 150vw;
     transform: rotate(20deg);
-    margin-top: -35vw;
-    margin-left: 10vw;
+    margin-top: -50vw;
+    margin-left: 0vw;
+    
+}
+
+.wave4 > img{
+    width : 200vw;
+    transform: rotate(-5deg) ;
+    margin-top: 0vw;
+    margin-left: -10vw;
+     
 }
 
 .aim{
@@ -113,7 +124,7 @@ nav ul li a:hover,nav ul li a:active{
     font-family: Spectral;
     font-size: max(3vw,30px);
     font-weight: bold;
-    margin-top: 5vw;
+    margin-top: 15vw;
     margin-left: 5vw;
     text-align: center;
 }
@@ -131,9 +142,8 @@ nav ul li a:hover,nav ul li a:active{
     margin-top : -3vw;
 }
 .vision{
-    position: absolute;
-    margin : 0 10vw;
-    margin-top: 80vh; 
+    position: relative;
+    margin : 0 10vw; 
     text-align: justify;
     padding: max(2vw,20px);
     font-size: max(2vw,20px);
@@ -149,4 +159,7 @@ nav ul li a:hover,nav ul li a:active{
     font-size: max(3vw,30px);
     padding-bottom: max(1vw,10px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.new{
+    padding-top: 95vh;
 }
