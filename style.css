@@ -36,7 +36,7 @@ nav ul li a{
 
 nav ul li a:hover,nav ul li a:active{
     background-color: #1897cf;
-}
+} 
 
 .home{
     position: relative;
@@ -106,7 +106,7 @@ nav ul li a:hover,nav ul li a:active{
 .vision{
     position: relative;
     margin : 0 10vw;
-    margin-top: 80vh;
+    margin-top: 80vh; 
     text-align: justify;
     padding: max(2vw,20px);
     font-size: max(2vw,20px);
