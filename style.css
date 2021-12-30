@@ -9,9 +9,9 @@ body{
     
     font-size: 15px;
     background: grey;
-    line-height: 1.64;
+    /* line-height: 1.64;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 }
 
 
@@ -64,8 +64,8 @@ nav ul li a:hover,nav ul li a:active{
 }  */
 
 .home{
-    position: relative;
-}
+    position: relative; 
+} 
 
 .home > .waves{
     width : 100vw;
