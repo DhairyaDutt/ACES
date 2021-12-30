@@ -9,10 +9,22 @@ body{
     
     font-size: 15px;
     background: grey;
-    line-height: 1.64;
+    /* line-height: 1.64;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 }
+
+
+/* nav{
+    position : sticky;
+    top : 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d78b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 15px;
+    z-index: 1;*/
 
 
 
@@ -30,7 +42,6 @@ body{
 #nb1 .nav-link:hover{
     color: #8b2323;
 }
-
 .navbar.scrolled {
     background: #04269E;
     transition: background 500ms;
@@ -38,4 +49,102 @@ body{
 
 #nb1 .navbar-nav{
     margin-left: 40rem;
+}
+
+/*nav ul li a{
+    height: 100%;
+    color : white;
+    text-decoration: none;
+    padding : calc(2vh + 15px) 3vw;
+    cursor: pointer;
+}
+
+nav ul li a:hover,nav ul li a:active{
+    background-color: #1897cf;
+}  */
+
+.home{
+    position: relative; 
+} 
+
+.home > .waves{
+    width : 100vw;
+    position: absolute;
+    overflow: hidden;
+}
+
+.home > .pic{
+    position: absolute;
+    width : 50vw;
+    left : 50%;
+    top : 20%;
+}
+
+   
+.wave1 > img{
+   width : 170vw;
+   transform: rotate(10deg);
+   margin-top: -30vw;
+   margin-left: -10vw;
+}
+
+.wave2 > img{
+    width : 150vw;
+    transform: rotate(10deg);
+    margin-top: -20vw;
+    margin-left: -10vw;
+}
+
+.wave3 > img{
+    width : 150vw;
+    transform: rotate(20deg);
+    margin-top: -35vw;
+    margin-left: 10vw;
+}
+
+.aim{
+    position: absolute;
+    display: flex;
+    color: #FFFF33;
+    width: 45vw;
+    font-style: normal;
+    font-family: Spectral;
+    font-size: max(3vw,30px);
+    font-weight: bold;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.aim::before{
+    content: open-quote;
+    font-size: 10vw;
+    margin-right : 2vw;
+    margin-top : -5vw;
+}
+.aim::after{
+    content: close-quote;
+    font-size: 10vw;
+    margin-left : 1vw;
+    margin-top : -3vw;
+}
+.vision{
+    position: relative;
+    margin : 0 10vw;
+    margin-top: 80vh; 
+    text-align: justify;
+    padding: max(2vw,20px);
+    font-size: max(2vw,20px);
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 3px solid red;
+    border-radius: 1vw;
+    background-color: rgba(255, 17, 0, 0.144);
+    color: black;
+    font-weight: bold;
+}
+.vision .head{
+    text-align: center;
+    font-size: max(3vw,30px);
+    padding-bottom: max(1vw,10px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
