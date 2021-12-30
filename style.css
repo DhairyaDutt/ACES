@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-    margin : 0%;
-    padding : 0%;
+html, body{
+    font-family: 'Roboto', sans-serif !important;
+    height: 100%;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
+
+body{
+    
+    font-size: 15px;
+    background: grey;
+    line-height: 1.64;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 
 /* nav{
     position : sticky;
@@ -14,19 +24,34 @@
     justify-content: space-between;
     align-items: center;
     padding : 0 15px;
-    z-index: 1;
-}
-nav img{
-    padding : 5px 0;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    font-size: 3vh;
-    font-weight: bold;
+    z-index: 1;*/
+
+
+
+#nb1 img{
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-nav ul li a{
+#nb1 .nav-link{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+#nb1 .nav-link:hover{
+    color: #8b2323;
+}
+.navbar.scrolled {
+    background: #04269E;
+    transition: background 500ms;
+}
+
+#nb1 .navbar-nav{
+    margin-left: 40rem;
+}
+
+/*nav ul li a{
     height: 100%;
     color : white;
     text-decoration: none;
