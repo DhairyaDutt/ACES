@@ -5,7 +5,7 @@
     padding : 0%;
 }
 
-nav{
+/* nav{
     position : sticky;
     top : 0px;
     font-family: 'Poppins', sans-serif;
@@ -36,7 +36,7 @@ nav ul li a{
 
 nav ul li a:hover,nav ul li a:active{
     background-color: #1897cf;
-} 
+}  */
 
 .home{
     position: relative;
