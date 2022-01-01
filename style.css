@@ -276,7 +276,7 @@ figure:hover h3, figure:hover p {
 
 /******************footer****************/
 
-#footer{
+/* #footer{
     background: linear-gradient(101.54deg, #5A21D1 -49.06%, #1A0841 102.87%);
     padding-bottom: 120px;
     color: white;
@@ -301,28 +301,45 @@ figure:hover h3, figure:hover p {
 
 #footer #size{
     font-size: 1.2rem; 
+} */
+
+.isFooter{
+  color: white;
+  background: linear-gradient(100.98deg, #04269E -19.09%, #001F0D 117.78%);
 }
 
-.white{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    color: black;
+.leftRow{
+  padding-left: 5rem;
 }
 
-.white #icons a{
-    text-decoration: none;
-    list-style: none;
+.isRight{
+  border-left: 3px solid white;
+  padding-left: 10%;
+  padding-top: 3%;
 }
 
-.white #icons #insta {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-            /* Also define standard property for compatibility */
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-  }
+.getIn{
+  text-align: center;
+}
+
+.socialMedia{
+  margin-bottom: 2rem;
+}
+
+/* .fa-linkedin{
+ 
+} */
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+.link:hover{
+  color: #FF6B6B;
+  text-decoration: none;
+
+}
+
 
 /***************animation***********/
   .reveal{
@@ -337,6 +354,42 @@ figure:hover h3, figure:hover p {
     opacity: 1;
   }
 
-  /********************preloader*************************/
+  /********************Media queries*************************/
+
+  @media only screen and (max-width: 480px) {
+    
+    .getIn{
+      padding-bottom: 10rem;
+    }
+
+    .leftRow{
+      padding-left: 3rem;
+      display: inline;
+    }
+
+    .link{
+      font-size: 1rem;
+    }
+
+    .fa-telegram{
+      padding-right: 7.4%;
+    }
+
+  }
 
   
+@media(max-width: 768px){
+  .isRight{
+      border-left: none;
+  }
+  .topBorder{
+      border-top: 3px solid #e9ecef;
+      padding-top: 7%;
+  }
+  
+  .bottomBorder{
+      padding-bottom: 7%;
+ 
+  }
+
+}
