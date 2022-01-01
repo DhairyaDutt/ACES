@@ -358,6 +358,56 @@ figure:hover h3, figure:hover p {
 
   @media only screen and (max-width: 480px) {
     
+    body{
+      overflow-x: hidden !important;
+    }
+
+    #nb1 .nav-link{
+      font-size: 1rem;
+    }
+
+    #rest{
+      padding-top: 5rem;
+    }
+
+    #rest h2{
+      font-size: 2rem !important;
+    }
+
+    #aboutUs{
+      padding: 2rem 5rem;
+    }
+
+    #aboutUs .vision{
+      font-size: 1rem;
+    }
+
+    #team{
+      padding: 2rem 5rem;
+    }
+
+    #team h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects{
+      padding: 2rem 5rem;
+    }
+
+    #projects h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects .col-lg-6{
+      padding-right: 0;
+    }
+
+    #projects .quotes{
+      padding-bottom: 1rem;
+    }
+
+
+
     .getIn{
       padding-bottom: 10rem;
     }
