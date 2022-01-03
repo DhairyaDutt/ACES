@@ -66,9 +66,16 @@ nav ul li a:hover,nav ul li a:active{
 
 
 .home{
-    position: relative; 
+    position: absolute; 
+    width : 100vw;
+    overflow: hidden;
 } 
 
+.home > img{
+    width : 200vw;
+    margin-top: -55vw;
+    margin-left: -55vw;
+}
 .home > .waves{
     width : 100vw;
     position: absolute;
