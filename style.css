@@ -74,9 +74,9 @@ body{
 
 .home{
     /* position: absolute;  */
-    margin-bottom: -12rem;
     width : 100%;
     overflow: hidden;
+    margin-bottom: -12rem;
 } 
 
 .home > img{
@@ -89,11 +89,10 @@ body{
 
 #aboutUs{
     padding: 40px 180px;
-    margin-bottom: -12rem;
 } 
 
 #aboutUs h2{
-    padding-top: 12rem;
+    /* padding-top: 5rem ; */
     font-weight: 700;
     font-size: 3rem;
     color: #FF6B6B;
@@ -107,7 +106,6 @@ body{
 
 #team{
     padding: 40px 140px;
-    margin-bottom: -12rem;
     /* display: flex; */
 }
 
@@ -254,7 +252,6 @@ figure:hover h3, figure:hover p {
 }
 
 #rest{
-    /* padding-top: 5rem; */
     text-align: center;
     color: black;
 }
@@ -358,9 +355,9 @@ figure:hover h3, figure:hover p {
       font-size: 1rem;
     }
 
-    #rest{
+    /* #rest{
       padding-top: 5rem;
-    }
+    } */
 
     #rest h2{
       font-size: 2rem !important;
@@ -442,12 +439,12 @@ figure:hover h3, figure:hover p {
       font-size: 1rem;
     }
 
-    #rest{
+    /* #rest{
       padding-top: 5rem;
-    }
+    } */
 
     #rest h2{
-      font-size: 2rem !important;
+      font-size: 3rem !important;
     }
 
     #aboutUs{
@@ -455,11 +452,11 @@ figure:hover h3, figure:hover p {
     }
 
     #aboutUs .vision{
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     #team{
-      padding: 2rem 5rem;
+      padding: 2rem 20vw;
     }
 
     #team h2{
@@ -482,6 +479,10 @@ figure:hover h3, figure:hover p {
       padding-bottom: 1rem;
     }
 
+    .isRight{
+      font-size: 1.2rem;
+    }
+
 
 
     .getIn{
@@ -494,7 +495,7 @@ figure:hover h3, figure:hover p {
     }
 
     .link{
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .fa-telegram{
@@ -502,3 +503,78 @@ figure:hover h3, figure:hover p {
     }
   }
 
+  @media only screen and (min-width: 769px) and (max-width: 992px){
+    html{
+      /* overflow-x: hidden; */
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nb1{
+      width: 100vw;
+      padding-right: 0;
+    }
+
+    #nb1 .nav-link{
+      font-size: 1rem;
+    }
+
+    /* #rest{
+      padding-top: 5rem;
+    } */
+
+    #rest h2{
+      font-size: 3rem !important;
+    }
+
+    #aboutUs{
+      padding: 2rem 5rem;
+    }
+
+    #aboutUs .vision{
+      font-size: 1.2rem;
+    }
+
+    #team{
+      padding: 2rem 20vw;
+    }
+
+    #team h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects{
+      padding: 2rem 5rem;
+    }
+
+    #projects h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects .col-lg-6{
+      padding-right: 0;
+    }
+
+    #projects .quotes{
+      padding-bottom: 1rem;
+    }
+
+    .isRight{
+      font-size: 1rem;
+    }
+
+    .link{
+      font-size: 0.8rem;
+    }
+
+    .fa-telegram{
+      padding-right: 7.4%;
+    }
+  }
