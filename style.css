@@ -15,17 +15,6 @@ body{
 }
 
 
-/* nav{
-    position : sticky;
-    top : 0px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #0d78b6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding : 0 15px;
-    z-index: 1;*/
-
 /***********navbar****************/
 
 #nb1 img{
@@ -41,8 +30,8 @@ body{
 
 #nb1 .nav-link:hover{
     color: #FF6B6B;
-
 }
+
 .navbar.scrolled {
     background: linear-gradient(100.98deg, #04269E -19.09%, #001F0D 117.78%);
     transition: background 500ms;
@@ -84,16 +73,17 @@ body{
 /********home page**************/
 
 .home{
-    position: absolute; 
-    width : 100vw;
+    /* position: absolute;  */
+    width : 100%;
     overflow: hidden;
+    margin-bottom: -12rem;
 } 
 
 .home > img{
-    width : 100vw;
+    width : 100%;
     margin-top: -3vw;
-    /* margin-left: -55vw; */
 }
+
  
 /*************aboutUs***************/
 
@@ -102,6 +92,7 @@ body{
 } 
 
 #aboutUs h2{
+    /* padding-top: 5rem ; */
     font-weight: 700;
     font-size: 3rem;
     color: #FF6B6B;
@@ -236,14 +227,6 @@ figcaption a:hover{
     transition: 0.3s;
 }
 
-/* figcaption a:visited{
-    color: #ffffff;
-    border: 2px solid #fff;
-    padding: 4px 10px;
-    text-decoration: none;
-    background: transparent;
-} */
-
 
 figure:hover figcaption {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -269,41 +252,14 @@ figure:hover h3, figure:hover p {
 }
 
 #rest{
-    padding-top: 55rem;
     text-align: center;
     color: black;
 }
 
 /******************footer****************/
 
-/* #footer{
-    background: linear-gradient(101.54deg, #5A21D1 -49.06%, #1A0841 102.87%);
-    padding-bottom: 120px;
-    color: white;
-}
-
-#footer hr{
-    background: white;
-}
-
-#footer ul{
-    text-decoration: none;
-    list-style-type: none;
-}
-
-#footer .row{
-    padding: 2rem 4rem;
-}
-
-#footer h3{
-    font-size: 3rem;
-}
-
-#footer #size{
-    font-size: 1.2rem; 
-} */
-
 .isFooter{
+  overflow-x: hidden;
   color: white;
   background: linear-gradient(100.98deg, #04269E -19.09%, #001F0D 117.78%);
 }
@@ -356,19 +312,52 @@ figure:hover h3, figure:hover p {
 
   /********************Media queries*************************/
 
+  /***********footer query*****************/
+  @media(max-width: 768px){
+    .isRight{
+      border-left: none;
+    }
+    .topBorder{
+      border-top: 3px solid #e9ecef;
+      padding-top: 7%;
+    }
+  
+    .bottomBorder{
+      padding-bottom: 7%;
+ 
+    } 
+
+  }
+
+
+
   @media only screen and (max-width: 480px) {
-    
+
+    html{
+      /* overflow-x: hidden; */
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
     body{
-      overflow-x: hidden !important;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nb1{
+      width: 100vw;
+      padding-right: 0;
     }
 
     #nb1 .nav-link{
       font-size: 1rem;
     }
 
-    #rest{
+    /* #rest{
       padding-top: 5rem;
-    }
+    } */
 
     #rest h2{
       font-size: 2rem !important;
@@ -427,19 +416,165 @@ figure:hover h3, figure:hover p {
 
   }
 
-  
-@media(max-width: 768px){
-  .isRight{
-      border-left: none;
-  }
-  .topBorder{
-      border-top: 3px solid #e9ecef;
-      padding-top: 7%;
-  }
-  
-  .bottomBorder{
-      padding-bottom: 7%;
- 
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+    html{
+      /* overflow-x: hidden; */
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nb1{
+      width: 100vw;
+      padding-right: 0;
+    }
+
+    #nb1 .nav-link{
+      font-size: 1rem;
+    }
+
+    /* #rest{
+      padding-top: 5rem;
+    } */
+
+    #rest h2{
+      font-size: 3rem !important;
+    }
+
+    #aboutUs{
+      padding: 2rem 5rem;
+    }
+
+    #aboutUs .vision{
+      font-size: 1.2rem;
+    }
+
+    #team{
+      padding: 2rem 20vw;
+    }
+
+    #team h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects{
+      padding: 2rem 5rem;
+    }
+
+    #projects h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects .col-lg-6{
+      padding-right: 0;
+    }
+
+    #projects .quotes{
+      padding-bottom: 1rem;
+    }
+
+    .isRight{
+      font-size: 1.2rem;
+    }
+
+
+
+    .getIn{
+      padding-bottom: 10rem;
+    }
+
+    .leftRow{
+      padding-left: 3rem;
+      display: inline;
+    }
+
+    .link{
+      font-size: 1.2rem;
+    }
+
+    .fa-telegram{
+      padding-right: 7.4%;
+    }
   }
 
-}
+  @media only screen and (min-width: 769px) and (max-width: 992px){
+    html{
+      /* overflow-x: hidden; */
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nb1{
+      width: 100vw;
+      padding-right: 0;
+    }
+
+    #nb1 .nav-link{
+      font-size: 1rem;
+    }
+
+    /* #rest{
+      padding-top: 5rem;
+    } */
+
+    #rest h2{
+      font-size: 3rem !important;
+    }
+
+    #aboutUs{
+      padding: 2rem 5rem;
+    }
+
+    #aboutUs .vision{
+      font-size: 1.2rem;
+    }
+
+    #team{
+      padding: 2rem 20vw;
+    }
+
+    #team h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects{
+      padding: 2rem 5rem;
+    }
+
+    #projects h2{
+      padding-top: 3rem !important;
+    }
+
+    #projects .col-lg-6{
+      padding-right: 0;
+    }
+
+    #projects .quotes{
+      padding-bottom: 1rem;
+    }
+
+    .isRight{
+      font-size: 1rem;
+    }
+
+    .link{
+      font-size: 0.8rem;
+    }
+
+    .fa-telegram{
+      padding-right: 7.4%;
+    }
+  }
